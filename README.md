@@ -1,17 +1,17 @@
-Network Fundamentals: Hub Topology & Broadcast Behavior
+# Network Fundamentals: Hub Topology & Broadcast Behavior
 
-📌 Project Overview
+### 📌 Project Overview
 This project demonstrates a basic Star Topology using a Network Hub in Cisco Packet Tracer. The objective is to visualize and understand how a Hub operates at Layer 1 (Physical Layer) of the OSI model, specifically its "blind" broadcasting behavior.
 
 
-🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 Cisco Packet Tracer 8.x
 
 Networking Concepts: IPv4 Addressing, Star Topology, OSI Layer 1, ICMP (Ping).
 
 
-🛰️ Topology Details
+### 🛰️ Topology Details
 
 The network consists of one Central Hub connected to four end devices using Copper Straight-Through cables:
 
@@ -24,7 +24,7 @@ PC2: 192.168.1.12
 Laptop0: 192.168.1.13
 
 
-🚀 Lab Objectives
+### 🚀 Lab Objectives
 
 Connectivity: Established physical links between PCs and the Hub.
 
@@ -34,7 +34,7 @@ Verification: Tested connectivity using the ping command in Simulation Mode.
 
 Security/Efficiency Analysis: Observed the Hub's inability to filter traffic based on MAC or IP addresses.
 
-🔍 Key Observations (The Hub Problem)
+### 🔍 Key Observations (The Hub Problem)
 
 During the simulation of an ICMP packet from PC0 to Laptop0, the following was observed:
 
@@ -47,12 +47,13 @@ Collision Domain: All devices connected to the Hub share a single collision doma
 Conclusion: This lab highlights why Hubs are obsolete in modern networks and have been replaced by Switches, which use a MAC address table to forward traffic intelligently.
 
 
-📸 Simulation Screenshot
+### 📸 Simulation Screenshot
 
 Figure 1: Packet Tracer simulation showing the Hub broadcasting packets to all connected nodes.
+[Hub Topology Screenshot](https://github.com/Donald-Cybertech/Network-Foundations-Hub-vs-Switch/blob/main/hub_topology.jpeg)
 
 
-📝 How to Run
+### 📝 How to Run
 
 Download the .pkt file from the /packet-tracer-files folder.
 
