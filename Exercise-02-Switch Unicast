@@ -1,1 +1,31 @@
+Network Fundamentals: Building a Simple LAN with a Layer 2 Switch
 
+📌 Project Overview
+This project demonstrates a basic Local Area Network (LAN) using a Cisco Catalyst 2960 Switch. The objective is to contrast the intelligent forwarding behavior of a Switch against the broadcast nature of a Hub, focusing on Unicast communication and the MAC Address Table.
+
+🛠️ Technologies Used
+Cisco Packet Tracer 8.x
+Hardware: Cisco 2960 Series Switch
+Networking Concepts: Layer 2 Switching, Ethernet, MAC Addresses, ICMP.
+
+🛰️ Topology Details
+Two workstations connected to a central switch via Copper Straight-Through cables:
+PC0: 192.168.1.10 /24
+PC1: 192.168.1.11 /24
+Interconnect: FastEthernet0/1 and FastEthernet0/2
+
+🚀 Lab Objectives
+Switch Deployment: Replaced the Hub with a 24-port Intelligent Switch (2960).
+Addressing: Assigned static IP addresses within the same subnet to ensure local reachability.
+Connectivity Test: Executed a ping command from PC0 to PC1.
+Traffic Analysis: Used Simulation Mode to observe how the Switch handles frames compared to a Hub.
+
+🔍 Key Observations (Switch vs. Hub)
+Unlike the previous Hub exercise, the following improvements were noted:
+Micro-Segmentation: The Switch created a dedicated path between PC0 and PC1.
+Unicast Delivery: After the initial ARP (Address Resolution Protocol) request, the ICMP packet was sent only to the intended destination. No other ports received the data.
+MAC Address Table: By accessing the Switch CLI and running show mac-address-table, I verified that the switch "learned" which device was on which port, allowing for efficient frame switching.
+Full Duplex: The Switch allows for simultaneous two-way communication, eliminating the collision issues found in Hub-based networks.
+
+📸 Simulation Screenshot
+Figure 2: Successful Ping between two PCs via a Cisco 2960 Switch.
