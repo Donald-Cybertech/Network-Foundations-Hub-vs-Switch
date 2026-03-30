@@ -55,7 +55,7 @@ Figure 1: Packet Tracer simulation showing the Hub broadcasting packets to all c
 
 ### 📝 How to Run
 
-Download the .pkt file from the /packet-tracer-files folder.
+Download the .pkt file from the [hub-topology.pkt](https://github.com/Donald-Cybertech/Network-Foundations-Hub-vs-Switch/blob/main/hub-topology.pkt)
 
 Open it in Cisco Packet Tracer.
 
